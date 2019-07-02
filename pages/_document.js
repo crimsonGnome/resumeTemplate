@@ -29,7 +29,7 @@ const globalStyles = `
     }
     a {
       text-decoration: none;
-      color: #393939;
+      color: black;
     }
   `;
 

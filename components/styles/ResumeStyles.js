@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const ImgContainer = styled.div`
-  height: 100px;
-  width: 100px;
+  height: 75px;
+  width: 75px;
   clip-path: polygon(50% 0%, 92% 62%, 74% 100%, 26% 100%, 8% 62%);
   background: ${props => props.theme.crimson};
   position: relative;
@@ -11,7 +11,7 @@ const ImgContainer = styled.div`
 
 const Logo = styled.img`
   position: relative;
-  height: 125px;
+  height: 100px;
   right: 15px;
 `;
 
@@ -41,6 +41,11 @@ const ResumeFormatDark = styled.div`
   grid-template-columns: 1fr;
   padding: 20px;
   text-align: left;
+
+  .marginPaddingSame {
+    margin-top: 0;
+    padding-top: 15px;
+  }
   h3,
   h4 {
     margin-top: 0;
@@ -55,6 +60,11 @@ const ResumeFormatDark = styled.div`
     padding-left: 10px;
     font-weight: 300;
     list-style-type: none;
+    padding: 10px;
+    margin: 0;
+  }
+  .last {
+    padding-bottom: 0px;
   }
   img {
     height: 15px;
@@ -62,7 +72,8 @@ const ResumeFormatDark = styled.div`
   li {
     display: grid;
     grid-template-columns: 15px 1fr;
-    grid-gap: 5px;
+    grid-gap: 10px;
+    margin: 10px 0;
   }
 
   h3 {
@@ -95,25 +106,28 @@ const ResumeFormatDark = styled.div`
 const ResumeFormat = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 20px;
+  padding: 0 10px;
   text-align: left;
+  li {
+    padding: 5px;
+  }
   h3,
   h4 {
     margin-top: 0;
   }
   label {
     font-style: italic;
-    padding-left: 10px;
   }
   ul {
     padding-left: 20px;
   }
-  p {
-    padding-left: 20px;
-    margin: 0.5rem 0;
-  }
   .title {
     font-size: 1.6rem;
+    font-weight: 600;
+  }
+  .role {
+    font-style: italic;
+    color: ${props => props.theme.crimson};
   }
   h2 {
     grid-column: 1 / -1;
@@ -138,7 +152,19 @@ const ResumeFormat = styled.div`
   h2:after {
     --direction: right;
   }
+  .margin-top {
+    margin-top: 0;
+  }
 `;
+
+const SeventyThirtyResumeLogo = styled.div`
+  display: grid;
+  background: white;
+  grid-template-columns: 7fr 3fr;
+  grid-gap: 20px;
+  padding: 0;
+`;
+
 export { ImgContainer };
 export { Logo };
 export { WhiteBackground };
@@ -147,3 +173,4 @@ export { LeftColumn };
 export { ResumeFormatDark };
 export { ResumeFormat };
 export { WhiteBackground2 };
+export { SeventyThirtyResumeLogo };

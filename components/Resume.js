@@ -25,12 +25,9 @@ class Resume extends Component {
             <SixtyFortyTop>
               <div>
                 <Title>Joseph Eggers</Title>
-                <label className="crimson dev">Full Stack Developer</label>
+                <label className="crimson dev">Software Developer</label>
               </div>
               <div className="grid">
-                <ImgContainer>
-                  <Logo src="/static/crimsonGnome.png" />
-                </ImgContainer>
                 <div>
                   <label className="crimson">Address:</label>
                   <div>515 E. Bellbrook St.</div>

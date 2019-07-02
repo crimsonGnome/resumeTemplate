@@ -6,9 +6,10 @@ const Education = styled.div`
   justify-items: center;
   text-align: left;
   font-weight: 600;
-  padding: 10px 20px 10px 20px;
+  padding: 0px 15px 10px 15px;
 
-  h4 {
+  h4,
+  h3 {
     grid-column: 1 / -1;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -16,6 +17,8 @@ const Education = styled.div`
     align-items: center;
   }
 
+  h3:before,
+  h3:after,
   h4:before,
   h4:after {
     display: block;
@@ -27,11 +30,15 @@ const Education = styled.div`
       transparent
     );
   }
-
+  h3:after,
   h4:after {
     --direction: right;
   }
   .title {
+  }
+  .marginPaddingSame {
+    margin-top: 0;
+    padding-top: 17px;
   }
 `;
 
@@ -47,7 +54,7 @@ const DarkEducation = styled.div`
 const DualList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 15px;
+  grid-gap: 20px;
   justify-items: left;
   align-items: center;
   justify-self: center;

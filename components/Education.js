@@ -3,6 +3,7 @@ import EducationStyles, {
   DualList,
   DarkEducation
 } from './styles/EducationStyles';
+
 import { ResumeFormatDark } from './styles/ResumeStyles';
 
 class Education extends Component {
@@ -10,17 +11,19 @@ class Education extends Component {
     return (
       <div>
         <EducationStyles>
-          <h4>Skillset</h4>
+          <h3 className="marginPaddingSame">Skillset</h3>
           <DualList>
             <li>Javascript</li>
             <li>NodeJS</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
+            <li>PHP</li>
+            <li>MySQL</li>
             <li>GraphQL</li>
             <li>MongoDB</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
             <li>Photoshop</li>
           </DualList>
-          <h4>Librares, Framework, JS</h4>
+          <h4>Libraries, Framework, JS</h4>
           <DualList>
             <li>ReactJS</li>
             <li>NextJS</li>
@@ -62,29 +65,19 @@ class Education extends Component {
             <div>
               <span>SAE Philanthropy Chair</span>
               <label>2014-2017</label>
-              <ul>
+              <ul className="last">
+                <li>
+                  <img src="/static/crimsonList.png" />
+                  <div>Raised $4,500 at a single event</div>
+                </li>
                 <li>
                   <img src="/static/crimsonList.png" />
                   <div>
-                    Raised over $10,000 and received the philanthropy
-                    organzation of the year from ULV for three years in a row
+                    From 2014 -2017, recieved the Philanthropy Organization of
+                    the Year Award for three consectuive years from ULV
                   </div>
                 </li>
               </ul>
-            </div>
-            <div>
-              <span>ULV ToastMaster</span>
-              <label>2018 -</label>
-              <ul>
-                <li>
-                  <img src="/static/crimsonList.png" />
-                  <div>Completed Level 1 of Leaadership Development</div>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <span>President and Founder of ULV Boardgame Club</span>
-              <label>2013-2017</label>
             </div>
           </ResumeFormatDark>
         </DarkEducation>

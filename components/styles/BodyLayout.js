@@ -6,8 +6,8 @@ const MainBody = styled.div`
   max-height: 1440px;
   background: linear-gradient(
     180deg,
-    #b2060180 23.5%,
-    ${props => props.theme.grey} 23.5%
+    ${props => props.theme.pink} 20.5%,
+    ${props => props.theme.grey} 20.5%
   );
 `;
 
@@ -34,7 +34,7 @@ const SixtyForty = styled.div`
 const SixtyFortyTop = styled.div`
   display: grid;
   background: white;
-  grid-template-columns: 6fr 3fr;
+  grid-template-columns: 8fr 2fr;
   grid-gap: 20px;
   justify-content: center;
   justify-self: center;
@@ -48,6 +48,7 @@ const SixtyFortyTop = styled.div`
   .dev {
     position: relative;
     top: 5px;
+    font-style: italic;
     margin-top: 1.5rem;
     color: ${props => props.theme.secondary};
   }
@@ -66,7 +67,7 @@ const ThirtySeventyBottom = styled.div`
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 3fr 7fr;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 10px 20px;
   border-bottom: 1px solid ${props => props.theme.crimson};
   border-left: 1px solid ${props => props.theme.crimson};
   border-right: 1px solid ${props => props.theme.crimson};

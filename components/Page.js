@@ -9,14 +9,13 @@ const theme = {
   tabletView: 'max-width: 1015px',
   phoneView: 'max-width: 600px',
   crimson: '#b20601',
-  pink: '#b2060160',
+  pink: '#b2060150',
   third: '#fcfcfc',
   grey: '#c7c7c7',
   black: '#393939'
 };
 const StyledPage = styled.div`
   background: white;
-  color: ${props => props.theme.black};
 `;
 // injectGlobal`
 //   html {
